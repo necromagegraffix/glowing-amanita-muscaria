@@ -1,0 +1,33 @@
+# Access platforms (ways to reach the models under budget). Captured 2026-10-23.
+# ALL prices from secondary/vendor blogs and CONFLICT between sources. Verify on official pricing pages before buying.
+# Budget: < $100/mo total. Commercial licence must be confirmed per tier in the vendor's own terms.
+platforms:
+  - name: Runway
+    models: ["Gen-4.5", "Seedance 2.0 (Unlimited/Enterprise plans only, per Runway X post; region limits)", "Kling 3.0 Pro", "Veo 3.1", "Aleph 2.0 (video-to-video restyle/edit)"]
+    price_seen: "Standard ~$12-15/mo (625 credits ~ 52s Gen-4.5); Pro higher"
+    fit: "Strongest candidate for ops: one login, multiple top models, edit tools. Check which models sit in which tier."
+    risks: "Credits run out fast on Gen-4.5; Seedance gated to top plan"
+  - name: Krea
+    models: ["Veo", "Kling", "Runway", "Seedance (reported)"]
+    price_seen: "Basic ~$9/mo (only some video models); Pro $35/mo unlocks all video models"
+    fit: "Cheapest route to all models; Pro tier $35 fits budget"
+    risks: "Seedance availability/version unverified"
+  - name: Higgsfield
+    models: ["Seedance", "Kling", "Veo", "Sora"]
+    price_seen: "~$9-19 entry, up to $119-129 top; sources conflict"
+    fit: "Good camera control, popular with creators"
+    risks: "Many reviews report fast credit burn (e.g. 42% in 3 days on Ultra), 'unlimited' is metered, billing/refund complaints, some models unavailable in US. Reviews partly affiliate."
+  - name: OpenArt
+    models: ["Seedance", "Kling", "Veo"]
+    price_seen: "Starter ~$14/mo (4000 credits); Pro cited ~$0.30/s for Seedance 2.5 720p"
+    risks: "Vendor-run comparison blog ranks itself first"
+  - name: Freepik / Magnific
+    price_seen: "$5.75-20/mo entry (sources conflict)"
+    status: "not verified"
+  - name: Artlist
+    price_seen: "AI Starter ~$11.99"
+    note: "Marketed on commercial licensing; verify"
+  - name: Direct vendor plans (Kling, Google AI/Flow, Seedance via Dreamina/CapCut)
+    note: "Best for licence clarity and 9:16 native settings; usually one model per plan"
+  - name: Fal.ai (API)
+    note: "Pay-per-second, ~$0.47/s Seedance 2.5 720p in one source. Ops-friendly for batch automation, not a UI subscription."

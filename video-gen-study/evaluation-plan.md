@@ -1,3 +1,5 @@
+> v4 NOTE: Owner writes prompts and runs generations. Claude only logs results, costs, licence status and updates the shortlist. Ignore any earlier mention of Claude drafting prompt sheets.
+
 # Evaluation Plan
 
 Goal: same tests, every candidate, scored identically, using free tiers/trials first.
