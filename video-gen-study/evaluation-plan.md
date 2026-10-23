@@ -26,3 +26,9 @@ model, plan/tier, date, prompt (verbatim), settings, scores, credits_used, notes
 
 ## Decision rule
 Generate all scored outputs on the paid tier with commercial rights (a watermark-free export is not automatically a licence; free-tier outputs may stay watermarked). Pick the cheapest plan (or 2-plan combo) under $100/mo that scores >=4 on the owner's ranked must-haves. If none exists, report the trade-off and the cheapest upgrade path.
+
+## v3 revisions (priority use cases)
+- Run ALL tests at 9:16. Test durations: 3-6s (app entry) and 5-10s (story). Drop T7 (long chaining) to optional.
+- Pass/fail gate before scoring: **brand fidelity**. Compare each output frame-by-frame against the approved keyframe/style PNG (palette, linework, texture, proportions, no added elements). Fail = model is out, regardless of other scores.
+- New test T9 (money test): take one real app-entry brief (3-6s) and one story brief (5-10s); start frame = approved still, optional end frame; 5 generations each; record how many are usable without rework (usable-take rate). Cost per usable second = credits spent / usable seconds.
+- Record take-to-usable ratio; it drives real monthly cost more than list price.

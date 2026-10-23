@@ -15,7 +15,17 @@ technical_nice_to_have: {long_clips: "15s+ via chaining acceptable", native_audi
 budget:
   monthly_usd_max: 100            # raised from 30; owner open to anything under $100
   note: "Combos of 2 plans allowed if total < $100"
+brand_fidelity: "EXACT. Non-negotiable (studio brand/client styles). Style drift = fail."
+priority_use_cases:               # revenue-driving, in order
+  1: {name: app_entry_videos, aspect: "9:16", duration_s: "3-6", reuse: false}
+  2: {name: app_story_videos, aspect: "9:16", duration_s: "5-10", reuse: "also marketing for studio's own channels"}
+  3: "more use cases to be added later (lower priority)"
+implications:
+  - "Clips are short (<=10s): long-clip chaining is NOT needed. Drop it from criteria."
+  - "9:16 native output required; avoid crop-from-16:9."
+  - "Exact style => animate approved still keyframes (image-to-video, start/end frame). Do not rely on text prompts to set style."
+  - "Brand text/logos: add in editing software afterwards, never trust generated text."
 open_questions:
-  - "Do clients need exact brand/style fidelity (e.g. match a PNG style guide)? How strict?"
-  - "Typical finished seconds per month?"
+  - "Typical finished seconds per month (and how many takes per final clip)?"
+  - "Which image tool makes the approved keyframes today?"
   - "Is audio/dialogue produced in-model or added in post?"

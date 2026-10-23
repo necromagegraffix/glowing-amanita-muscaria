@@ -18,6 +18,10 @@ Audience: the project owner AND other AI models/agents that will write prompts, 
 Priorities: consistency > motion quality. Client + studio marketing work => commercial licence required. Inputs: own source images + style PNGs, varying aspect ratios. Budget now < $100/mo, so a 2-plan combo is viable.
 Likely shape: one reference-strong model for hero storytelling shots (Seedance / Kling / Runway, to be decided by tests) + optionally Veo or a cheap model for audio/drafts.
 
+## Update v3
+Brand fidelity is exact and non-negotiable. Priority outputs: 9:16 app entry videos (3-6s) and app story videos (5-10s, reused for marketing). Short clips remove the long-clip problem; the deciding factors are style lock via keyframes, 9:16 support, usable-take rate and commercial licence.
+Recommended workflow: approved still keyframe -> image-to-video (start frame, optionally end frame) -> light grade/typography in editor.
+
 ## Key tension in the requirements (v1, partly superseded)
 The owner wants long clips, native audio, character consistency, 1080p-4K, and all four input modes, on under $30/month. No single plan covers all of it. Expect to prioritize:
 - Rank the must-haves vs nice-to-haves (open question in `requirements.yaml`).
