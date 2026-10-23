@@ -1,17 +1,21 @@
-# Source of truth for what the owner needs. Captured 2026-10-23.
+# Source of truth for what the owner needs. Updated 2026-10-23 (v2).
+use_case: "Storytelling-based motion video; client work across varied design styles + marketing for studio channels"
+priorities:                       # ranked by owner
+  1: "Consistency (character, style, scene) across shots"
+  2: "Motion quality ('delight'): expressive, natural, intentional movement"
+  3: "Everything else (audio, length, resolution) is secondary / nice-to-have"
+commercial_use: true              # client work => paid tier with commercial rights, generated on that tier from day one
 styles: [cinematic_photoreal, stylized_animated, motion_graphics_logo, product_ad]
-technical:
-  long_clips: true          # 15s+ ; see README note on chaining
-  native_audio: true        # sound / dialogue / lip-sync
-  character_consistency: true
-  resolution: "1080p-4K"
-inputs: [text_to_video, image_to_video, video_to_video, start_end_frame]
+inputs:
+  primary: [image_to_video, reference_images]   # owner has source images + PNGs of specific design styles
+  also: [text_to_video, video_to_video, start_end_frame]
+assets_available: "Source images and PNG style references"
+aspect_ratios: "Vary per project (16:9, 9:16, 1:1, etc.): require a model/plan that supports multiple ratios"
+technical_nice_to_have: {long_clips: "15s+ via chaining acceptable", native_audio: true, resolution: "1080p minimum; 4K optional"}
 budget:
-  monthly_usd_max: 30
-  usage: "exploratory / personal"
-open_questions:            # ask the owner before finalizing
-  - "Rank must-haves vs nice-to-haves (audio? 4K? length?)"
-  - "Commercial use / client work? (license terms differ per plan)"
-  - "How many finished seconds per month?"
-  - "Have source art (e.g. stills/designs) to animate? Which formats/aspect ratios (16:9, 9:16)?"
-  - "Final delivery platform (social, web, broadcast)?"
+  monthly_usd_max: 100            # raised from 30; owner open to anything under $100
+  note: "Combos of 2 plans allowed if total < $100"
+open_questions:
+  - "Do clients need exact brand/style fidelity (e.g. match a PNG style guide)? How strict?"
+  - "Typical finished seconds per month?"
+  - "Is audio/dialogue produced in-model or added in post?"

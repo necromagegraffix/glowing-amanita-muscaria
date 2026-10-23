@@ -11,10 +11,12 @@ Goal: same tests, every candidate, scored identically, using free tiers/trials f
 | T4 | Start frame + end frame, 5s | frames | motion control |
 | T5 | Restyle a 5s reel clip | video | video-to-video |
 | T6 | Animated logo/type, 5s loop | text/image | motion-graphics quality |
+| T8 | Feed 2-3 owner style-reference PNGs + one character image; generate 3 shots in that style at 16:9, 9:16, 1:1 | refs | style fidelity + aspect-ratio handling |
 | T7 | Extend/chain to 15-20s | any | long-clip workflow |
 
-## Scoring (1-5 each)
-fidelity to prompt, motion quality, consistency, audio quality, artifacts, controllability.
+## Scoring (1-5 each), weighted for owner priorities
+consistency x3, motion quality x3, style fidelity to owner's PNG references x2, controllability x1, audio x1, artifacts x1.
+Tests T3 (consistency) and T2/T8 below carry the most weight.
 Also record: credits consumed, wall-clock time, resolution delivered, license/commercial terms.
 
 ## Record format (`results/<model>__<test-id>.md`)
@@ -23,4 +25,4 @@ model, plan/tier, date, prompt (verbatim), settings, scores, credits_used, notes
 ```
 
 ## Decision rule
-Pick the cheapest plan (or 2-plan combo) under $30/mo that scores >=4 on the owner's ranked must-haves. If none exists, report the trade-off and the cheapest upgrade path.
+Generate all scored outputs on the paid tier with commercial rights (a watermark-free export is not automatically a licence; free-tier outputs may stay watermarked). Pick the cheapest plan (or 2-plan combo) under $100/mo that scores >=4 on the owner's ranked must-haves. If none exists, report the trade-off and the cheapest upgrade path.
