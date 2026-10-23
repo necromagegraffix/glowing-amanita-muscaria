@@ -1,0 +1,10 @@
+# Candidate models. ALL figures unverified (secondary sources, 2026-10-23). Re-check before use.
+schema: [name, vendor, inputs, audio, max_clip_s, max_res, approx_api_usd_per_s, consumer_plan, strengths, confidence, verified_on]
+models:
+  - {name: "Veo 3.1", vendor: Google, audio: native, approx_api_usd_per_s: "0.05 (Lite) - 0.40 (Std)", consumer_plan: "Google AI plans, ~$5-$200/mo", strengths: "realism, outdoor/atmospheric", confidence: low, verified_on: null}
+  - {name: "Kling 3.0", vendor: Kuaishou, audio: native, approx_api_usd_per_s: "0.08-0.15", strengths: "character-driven shots, value", confidence: low, verified_on: null}
+  - {name: "Runway Gen-4.5", vendor: Runway, approx_api_usd_per_s: "0.12", consumer_plan: "from ~$12-15/mo, 625 credits ~ 52s", strengths: "editing, VFX, video-to-video", confidence: low, verified_on: null}
+  - {name: "Sora 2", vendor: OpenAI, consumer_plan: "via ChatGPT Plus ~$20/mo (reported)", approx_api_usd_per_s: "~0.10", confidence: low, verified_on: null}
+  - {name: "Seedance 2.x", vendor: ByteDance, approx_api_usd_per_s: "0.02-0.23 (sources conflict)", strengths: "ranked highly, fast tier cheap", confidence: low, verified_on: null}
+  - {name: "Hailuo 2.3", vendor: MiniMax, approx_api_usd_per_s: "~0.10", strengths: "cheap iteration", confidence: low, verified_on: null}
+  - {name: "Wan 3.0", vendor: Alibaba, approx_api_usd_per_s: "~0.08", strengths: "low cost, open-weights lineage", confidence: low, verified_on: null}
